@@ -1,4 +1,4 @@
-import {JumbotronContainer, FaqsContainer, HeaderContainer } from '../container'
+import {JumbotronContainer, FaqsContainer,FooterContainer, HeaderContainer } from '../container'
 import { OptForm, Feature } from '../components'
 
 export const Home = () => {
@@ -20,6 +20,7 @@ export const Home = () => {
         </HeaderContainer>
          <JumbotronContainer/>
          <FaqsContainer/>
+         <FooterContainer/>
         </>
     )
 }

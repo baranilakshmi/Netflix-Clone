@@ -26,7 +26,7 @@ export const Signin = () => {
         .then(() => {
             history.push(ROUTES.BROWSE);
         })
-        .catch(() => {
+        .catch((error) => {
             setEmailAddress('');
             setPassword('');
             setError(error.message);
@@ -53,7 +53,7 @@ export const Signin = () => {
                     placeholder="Password"
                     onChange={({target}) => setPassword(target.value)}
                 />
-                <Form.Submit diabled={isInvalid} type="submit" data-testid="sign-in">
+                <Form.Submit disabled={isInvalid} type="submit" data-testid="sign-in">
                     Sign In
                 </Form.Submit>
             </Form.Base>
